@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>BIM app</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-text">
+        <h1>BIM - data you need</h1>
+        <p>Jeszcze się zastanów co tu napisac/ zrobić</p>
+      </div>
+      <div class="header-bar"></div>
+    </header>
+
+    <main>
+      <div id="app">
+        <div id="container"></div>
+        <aside id="sidebar">
+          <h2>Opcje wyświetlania</h2>
+          <h3>Ładowanie modelu IFC</h3>
+          <input
+            type="file"
+            id="ifc-file-input"
+            accept=".ifc"
+            style="margin-bottom: 10px; width: 100%; padding: 5px;"
+          />
+          <label for="load-ifc-checkbox">
+            <input type="checkbox" id="load-ifc-checkbox" disabled />
+            Load IFC
+          </label>
+        </aside>
+      </div>
+      <script type="module" src="/src/main.ts"></script>
+    </main>
+
+    <header>
+      <div class="header-text">
+        <p>W celu pobrania pełnych danych wypełnij poniższy formularz</p>
+      </div>
+      <div id="form-container" style="padding: 20px;">
+        <h2>Formularz kontaktowy</h2>
+        <form id="contact-form">
+          <label for="first-name">Imię:</label>
+          <input type="text" id="first-name" name="first-name" required />
+
+          <label for="last-name">Nazwisko:</label>
+          <input type="text" id="last-name" name="last-name" required />
+
+          <label for="phone-number">Numer telefonu:</label>
+          <input 
+            type="tel" 
+            id="phone-number" 
+            name="phone-number" 
+            required 
+            pattern="^\+?[0-9]{9,15}$" 
+            title="Numer telefonu musi zawierać od 9 do 15 cyfr. Może zaczynać się od '+'." 
+          />
+          <button type="submit">Wyślij</button>
+        </form>
+        <button id="download-data" disabled>Pobierz dane</button>
+      </div>
+    </header>
+  </body>
+</html>
+
