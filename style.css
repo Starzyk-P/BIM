@@ -1,0 +1,134 @@
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: whitesmoke;
+}
+
+header {
+  position: relative;
+  text-align: left;
+  padding-left: 20px;
+  margin: 20px;
+  border-bottom: 4px solid #283b4e;
+  padding-bottom: 10px;
+}
+
+.header-text h1 {
+  font-size: 2.5rem;
+  color: #447eb8;
+}
+
+.header-text p {
+  font-size: 1.2rem;
+  color: #004080;
+}
+
+.header-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #004080;
+}
+
+#app {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+#container {
+  width: 75%;
+  height: 600px;
+  background-color: rgb(43, 51, 54);
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.585);
+}
+
+#sidebar {
+  width: 20%;
+  padding: 20px;
+  background-color: rgb(60, 72, 161);
+  color: bisque;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+#sidebar h2, #sidebar h3 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+#sidebar label {
+  color: bisque;
+  font-size: 1rem;
+}
+
+#sidebar input[type="file"] {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+}
+
+#sidebar input[type="checkbox"] {
+  margin-left: 5px;
+}
+
+#form-container {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact-form label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#contact-form input {
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#contact-form button {
+  padding: 10px 20px;
+  background-color: #004080;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#contact-form button:hover {
+  background-color: #0066cc;
+}
+
+#download-data {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #ccc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: not-allowed;
+}
+
+
+
+
+
